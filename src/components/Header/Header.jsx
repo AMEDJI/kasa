@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header>
-      <h1>Kasa</h1>
+    <header className='header'>
+      <div className='logo'></div>
       <nav>
         <Link to="/">Accueil</Link> | <Link to="/about">À propos</Link>
       </nav>

@@ -1,3 +1,5 @@
+@media (min-width: 1024px) {
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -12,7 +14,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+#root{
+  width: 100%;
+  background-color: white;
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -65,4 +70,6 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
 }

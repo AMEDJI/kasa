@@ -1,7 +1,23 @@
+/* Version desktop */
+@media (min-width: 1024px){
 .footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 30px 0;
   margin-top: 50px;
+
+  display: flex;               
+  flex-direction: column;      
+  align-items: center;         
+}
+
+.logoFooter {
+  width: 150px;
+  height: 60px;
+  background-image: url('../../assets/images/logoFooter.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;   /* recentre l'image */
+}
 }

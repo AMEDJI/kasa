@@ -1,8 +1,12 @@
-import Collapse from '../components/Collapse/Collapse'
+import "./About.css";
+import Collapse from '../../components/Collapse/Collapse'
+import AboutBanner from "../../components/Banner/AboutBanner"; 
 
 const About = () => {
   return (
     <div className="about">
+      <AboutBanner /> 
+
       <Collapse
         title="Fiabilité"
         content="Les annonces postées sur Kasa garantissent une fiabilité totale..."

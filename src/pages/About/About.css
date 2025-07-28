@@ -1,0 +1,19 @@
+/* About.css */
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .about {
+    background-color: white;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+  }
+
+  .collapse {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}

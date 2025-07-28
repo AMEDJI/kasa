@@ -1,21 +1,32 @@
+/* Version desktop */
+@media (min-width: 1024px){
 .header {
+  background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* met les éléments aux extrémités */
   align-items: center;
-  padding: 20px;
+  padding: 2% 3% 0% 3%; /* espace intérieur */
 }
 
-.header img {
-  height: 40px;
+.header .logo {
+  width: 150px;
+  height: 60px;
+  background-image: url('../../assets/images/Logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;     /* pour garder proportions */
+  background-position: left center;
 }
+
 
 .header nav {
   display: flex;
-  gap: 20px;
+  color: black;
+  gap: 10px; /* espace entre Accueil et A Propos */
 }
 
 .header nav a {
   text-decoration: none;
-  color: #ff6060;
-  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+}
 }

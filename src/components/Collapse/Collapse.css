@@ -1,22 +1,43 @@
+/* Version desktop */
+@media (min-width: 1024px){
 .collapse {
-  margin: 20px 0;
-  border: 1px solid #ff6060;
-  border-radius: 10px;
+  width: 80%;
+  margin: 20px auto; /* ← Centré horizontalement */
+  border-radius: 5px;
   overflow: hidden;
 }
 
 .collapse-header {
+  width: 100%; /* ← plus besoin de 80% ici */
   background-color: #ff6060;
   color: white;
-  padding: 15px 20px;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 15px 20px; /* un peu d’air autour du texte */
+  box-sizing: border-box;
 }
 
 .collapse-content {
   background-color: #f7f7f7;
   padding: 15px 20px;
   color: #333;
+  animation: fadeIn 0.3s ease-in-out;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 }

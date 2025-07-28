@@ -1,0 +1,19 @@
+/* Version desktop */
+@media (min-width: 1024px){
+.home {
+  padding: 3%;
+  background-color: #ffffff; /* fond gris clair comme dans la maquette */
+  min-height: 100vh;
+}
+
+.home__grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+margin-top: 2rem;
+background-color: #F6F6F6;
+border-radius: 35px;
+padding: 50px 20px 20px 50px;
+}
+}
