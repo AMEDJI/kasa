@@ -1,14 +1,13 @@
-import'./Card.css'
+import { Link } from 'react-router-dom';
+import './Card.css';
 
-import './Card.css'
-
-const Card = ({ title, cover }) => {
+const Card = ({ id, title, cover }) => {
   return (
-    <article className="card">
+    <Link to={`/logement/${id}`} className="card">
       <img src={cover} alt={title} />
       <h3>{title}</h3>
-    </article>
-  )
-}
+    </Link>
+  );
+};
 
-export default Card
+export default Card;

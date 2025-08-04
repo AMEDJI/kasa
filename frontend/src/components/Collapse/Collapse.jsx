@@ -1,23 +1,27 @@
-import { useState } from 'react'
-import './Collapse.css'
+import { useState } from 'react';
+import './Collapse.css';
+
+// Import FontAwesome
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 
 const Collapse = ({ title, content }) => {
-  const [isOpen, setIsOpen] = useState(false) //useState(false) = la section est fermée par défaut.
-  //isOpen = quand on clique sur le titre, pour l'ouvrir ou fermer
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggle = () => {
-    setIsOpen(!isOpen)
-  }
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div className="collapse">
       <div className="collapse-header" onClick={toggle}>
         <h3>{title}</h3>
-        <span>{isOpen ? '▲' : '▼'}</span>
+        <FontAwesomeIcon
+          icon={isOpen ? faChevronUp : faChevronDown}
+          className="collapse-icon"
+        />
       </div>
       {isOpen && <div className="collapse-content">{content}</div>}
     </div>
-  )
-}
+  );
+};
 
-export default Collapse
+export default Collapse;
