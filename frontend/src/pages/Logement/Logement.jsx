@@ -64,9 +64,6 @@ const Logement = () => {
 </div>
 
       </div>
-
-
-
       <div className="logement-details">
         <Collapse title="Description" content={logement.description} />
         <Collapse

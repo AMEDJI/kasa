@@ -1,6 +1,9 @@
+// pages/Home/Home.jsx
 import { useState, useEffect } from 'react'
 import Card from '../../components/Card/Card'
 import Banner from '../../components/Banner/Banner'
+import bannerHome from '../../assets/images/banner-home.jpg'
+
 import './Home.css'
 
 const Home = () => {
@@ -15,7 +18,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Banner image="/assets/banner-home.jpg" title="Chez vous, partout et ailleurs" />
+      <Banner image={bannerHome} title="Chez vous, partout et ailleurs" />
 
       <div className="home__grid">
         {properties.map((property) => (
