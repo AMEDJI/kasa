@@ -5,7 +5,7 @@
   overflow: hidden;            
   margin: 12px 0;
   width: 80%;
-  margin-left: 10%;
+  /* margin-left: 10%; */
 }
 
 .collapse-header {
@@ -17,7 +17,7 @@
   align-items: center;
   font-weight: bold;
   font-size: 1.1rem;
-  padding: 15px 20px;
+  padding: 8px 8px;
   transition: background 0.2s ease;
   user-select: none;
 }
@@ -35,13 +35,10 @@
 /* Icône (chevron) */
 .collapse-icon {
   font-size: 1.1rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
-/* Quand le collapse est ouvert, pivoter l’icône */
-.collapse.open .collapse-icon {
-  transform: rotate(180deg);
-}
+
 
 /* Contenu : fermé par défaut (replié) */
 .collapse-content {
@@ -74,5 +71,16 @@
   .collapse-icon,
   .collapse-content {
     transition: none;
+  }
+}
+
+/* Version mobile */
+
+@media (min-width: 320px) and (max-width: 600px) {
+
+ .collapse {
+    width: 100%;
+    margin-left: 0px;
+
   }
 }

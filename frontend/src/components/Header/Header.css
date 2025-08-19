@@ -30,3 +30,49 @@
   font-size: 1.2rem;
 }
 }
+
+/* Version mobile entre 320–600px */
+
+@media (min-width: 320px) and (max-width: 600px){
+  .header {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 12px 12px 0 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .header .logo {
+    width: 120px;
+    height: 44px;
+    background-image: url('../../assets/images/Logo.png');
+    background-repeat: no-repeat;
+    background-size: contain; 
+    background-position: left center;
+  }
+
+  .header nav {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    font-size: 0;
+  }
+
+  .header nav a {
+    font-size: 0.85rem; 
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .header nav a:focus-visible,
+  .header nav a:hover {
+    text-decoration: underline;
+  }
+  .header nav a:first-of-type {
+    text-decoration: underline;
+  }
+}

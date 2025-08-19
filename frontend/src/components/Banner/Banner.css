@@ -31,6 +31,40 @@
 }
 }
 
-/* Version tablette */
-
 /* Version mobile */
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .banner {
+
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    height: auto;      
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .banner-img {
+
+    width: 100%;
+    height: 50%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 15px; 
+  }
+
+  .banner-title {
+   
+    transform: translateY(-50%);
+    text-align: left;
+    line-height: 1.2;
+    max-width: 20ch;
+    color: white;
+    padding-bottom: 40%;
+    padding-left: 5%;
+    font-size: 1.40rem;
+  
+  }
+}
